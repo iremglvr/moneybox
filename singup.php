@@ -31,7 +31,7 @@ if ($_POST)
 
     $user = $sorgu->fetch(PDO::FETCH_ASSOC);
    
-    $db = null;
+    //$db = null;
 
     if ($user) 
     {
@@ -49,7 +49,7 @@ if ($_POST)
 
         $sorgu->execute();
 
-        $db = null;
+        //$db = null;
         $_SESSION['users_nickname'] = $users_nickname;
         Header('Location:home.php');
 exit();
